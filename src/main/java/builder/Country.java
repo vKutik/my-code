@@ -1,9 +1,11 @@
+package builder;
+
 import java.util.Arrays;
 
 /* in main
 
 
-Country urkaine = new Country.Builder().setNameCountry("Ukraine").build();
+builder.Country urkaine = new builder.Country.Builder().setNameCountry("Ukraine").build();
 
 */
 
@@ -20,7 +22,7 @@ public class Country {
 
     @Override
     public String toString() {
-        return "Country{" +
+        return "builder.Country{" +
                 "nameCountry='" + nameCountry + '\'' +
                 ", regions=" + Arrays.toString(regions) +
                 ", popularyti=" + popularyti +
